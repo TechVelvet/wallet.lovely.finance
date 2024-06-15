@@ -1,0 +1,28 @@
+.btn {
+  transition: .3s ease;
+  cursor: pointer;
+  border: none;
+  width: 181px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #5F84F5;
+  color: #f2f5ff;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Livvic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+}
+.btn:hover{
+  background: #C04F71
+}
+@media only screen and (max-width:576px){
+  .btn{
+    font-size: 12px;
+    border-radius: 12.95px;
+  }
+}

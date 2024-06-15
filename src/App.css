@@ -1,0 +1,41 @@
+html {
+  background: #E6ECFA;
+}
+
+.scrollTopBtn {
+  position: fixed;
+  padding: 12px;
+  background: #5F84F5;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  right: 25px;
+  bottom: 50px;
+  z-index: 99999;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 10px 30px 0px #00000043;
+  transition: .3s ease;
+}
+.scrollTopBtn:hover{
+  background: #ED628B;
+}
+.Toastify__close-button{
+  display: none;
+}
+.Toastify__toast{
+  background: #F5F7FF !important;
+  border-radius: 12px !important;
+}
+.Toastify__toast-theme--dark{
+  color: #5F84F5 !important;
+}
+@media screen and (max-width: 576px) {
+  .scrollTopBtn {
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+    bottom: 60px;
+    right: 10px;
+  }
+}

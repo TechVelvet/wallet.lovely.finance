@@ -1,0 +1,815 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body{
+  position: relative;
+  overflow-x: hidden;
+  transition: all .3s linear;
+}
+
+.stroke-text {
+  user-select: none;
+  text-align: center;
+  -webkit-text-stroke: 2px #A8AAC1;
+  color: transparent;
+  font-family: Livvic;
+  font-size: 10vw;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 8.078px;
+  text-transform: uppercase;
+  opacity: 0.15;
+}
+
+.Wallet-container {
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: Livvic;
+  margin-top: 40px;
+}
+
+.Wallet-inner {
+  width: 1320px;
+  height: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+.Wallet-container .Wallet-btn {
+  border-radius: 50%;
+  position: absolute;
+  left: 265px;
+  top: -150px;
+  filter: drop-shadow(0px 23px 60px #ed628b);
+  z-index: 999;
+}
+
+.Wallet-container .Wallet-btn img {
+  width: 270px;
+}
+
+.Wallet-svg-div {
+  position: relative;
+  background: url("../images/Subtract.svg") no-repeat;
+  background-size: contain;
+  width: 1320px;
+  height: 463px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+  align-items: center;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.Wallet-inner span{
+  font-family: Livvic;
+  font-size: 25.275px;
+  font-weight: 900;
+  line-height: 148%;
+  letter-spacing: 1.264px;
+}
+.Wallet-inner span:nth-child(1) {
+  color: #5C6081;
+}
+
+.Wallet-inner span:nth-child(2) {
+  color: #181B2E;
+}
+
+.Wallet-inner span:nth-child(3) {
+  color: #ED628B;
+}
+.Wallet-inner p {
+  margin-top: 10px;
+  color: #181B2E;
+  font-family: Livvic;
+  font-size: clamp(2rem, 5vw, 4.43rem);
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 1.553px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.bottom-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12.74px;
+  margin-bottom: 50px;
+}
+
+.bottom-buttons button {
+  cursor: pointer;
+  width: 191.15px;
+  height: 56.07px;
+  border-radius: 12px;
+  border: none;
+  background-size: cover;
+}
+
+.bottom-buttons .AppStore {
+  background: url('../images/AppstoreIcon.svg') no-repeat top;
+}
+
+.bottom-buttons .PlayStore {
+  background: url('../images/PlaystoreIcon.svg') no-repeat top;
+}
+
+.bottom-buttons .chromeExtension {
+  background: url('../images/extensionIcon.svg') no-repeat top;
+}
+
+.About-inner{
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background-size: contain;
+  padding-bottom: 30px;
+  width: calc(100% - 80px);
+}
+
+.About-inner > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 375px;
+}
+.About-inner .About-first{
+  background: url(../images/About-first-last.svg) no-repeat top;
+  background-size: contain;
+  width: 322px;
+}
+.About-inner .About-second{
+  background: url(../images/About-second.svg) no-repeat top;
+  background-size: contain;
+  width: 352px;
+}
+.About-inner .About-third{
+  background: url(../images/About-third.svg) no-repeat top;
+  background-size: contain;
+  width: 352px;
+}
+.About-inner .About-last{
+  background: url(../images/About-first-last.svg) no-repeat top;
+  background-size: contain;
+  width: 322px;
+}
+.About-inner p {
+  display: flex;
+  flex-direction: column;
+  color: #181B2E;
+  text-align: center;
+  font-family: Manrope;
+  font-size: clamp(.8rem, 3vw, 2.3rem);
+  font-weight: 800;
+}
+.About-inner span {
+  color: #5F84F5;
+  font-weight: 500;
+}
+.About-inner span span {
+  color: #000000;
+  font-weight: 900;
+}
+.About-inner span strong{
+  color: #000000;
+  font-weight: 900;
+}
+.Features-Container{
+  background-color: #F5F7FF;
+  padding: 90px 0;
+}
+.Features-outer{
+  height: 120px;
+  margin-top: -90px;
+}
+.Features-outer img{
+  height: 155px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.Features-title {
+  width: calc(100% - 30px);
+  margin: auto;
+  font-family: Livvic;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.Features-title p {
+  color: #181B2E;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+  margin-bottom: 20px;
+}
+.Features-title span{
+  color: #ED628B;
+}
+.Features{
+  margin: 136px auto 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 30px);
+  justify-content: space-between;
+  max-width: 700px;
+  gap: 80px 67px;
+}
+.Features svg{
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 30px;
+}
+.featuresCard{
+  position: relative;
+  width: fit-content;
+}
+.FeatureIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #FAFBFF;
+  filter: drop-shadow(0px 30px 56px #181b2e9c);
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.FeatureIcon img{
+  height: 55px;
+  aspect-ratio: 1/1;
+}
+.FeatureContent {
+  border-radius: 0 0 45px 45px;
+  background: url('../images/FeaturesCards.svg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 315.38px;
+  height: 210.25px; 
+  color: #ED628B;
+  font-family: Livvic;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.FeatureContent p{
+  margin-top: 20px;
+}
+.FeatureContent span{
+  color: #000;
+  font-weight: 300;
+  width: 80%;
+  font-size: 13px;
+}
+.BuySell-crypto-container{
+  padding: 110px 0;
+  position: relative;
+  background-color: #E6ECFA;
+}
+.BuySell-outer{
+  position: absolute;
+  background: url('../images/Features-outer.svg') no-repeat;
+  background-position: bottom center;
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  top: 0;
+  z-index: 1;
+}
+.Crypto-Content{
+  width: calc(100% - 30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 110px;
+}
+.Crypto-Mockup{
+  width: 732px;
+}
+.Crypto-Info{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.Crypto-Info img {
+  width: 101px;
+  height: 140.79px;
+}
+.Crypto-Info div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #181B2E;
+  font-family: Livvic;
+  font-size: 36.728px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.Crypto-Info p span{
+  color: #ED628B;
+}
+
+.Exchange-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 130px;
+}
+.Exchange-container h1 {
+  color: #181B2E;
+  text-align: center;
+  font-family: Livvic;
+  font-size: 77.65px;
+  font-weight: 900;
+  letter-spacing: 1.553px;
+  text-transform: uppercase;
+}
+.Exchange-container h1 span{
+  color: #ED628B;
+}
+.Exchange-container p {
+  color: #A8AAC1;
+  text-align: center;
+  font-family: Livvic;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2.08px;
+  text-transform: uppercase;
+}
+.Exchange-container button {
+  margin-top: 20px;
+  background: #ED628B;
+  width: 193px;
+  height: 45px;
+  border: none;
+  border-radius: 12px;
+  color: #F2F5FF;
+  text-align: center;
+  font-family: Livvic;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.Exchange{
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.ExchangeTop,
+.ExchangeBottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  filter: drop-shadow(0px 4px 30px #0000001e);
+}
+.ExchangeTop{
+  background: url('../images/ExchangeTop.svg') no-repeat top;
+  width: 510px;
+  height: 189.44px;
+}
+.Exchange-container .Refresh{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42.78px;
+  height: 42.78px;
+  left: 50%;
+  border-radius: 50%;
+  bottom: 33.8%;
+  transform: translateX(-50%);
+  filter: drop-shadow(0px 8px 10px #ed628ca5);
+ }
+
+.ExchangeBottom{
+  margin-top: 5px;
+  background: url('../images/ExchangeBottom.svg') no-repeat top;
+  height: 128.33px;
+}
+.Exchange-inner-left {
+  color: #A8AAC1;
+  font-family: Livvic;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+}
+.Exchange-inner-left h4 {
+  color: #181B2E;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Livvic;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+}
+.Exchange-inner-right {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  color: #A8AAC1;
+  font-family: Livvic;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 1.84px;
+  text-transform: uppercase;
+}
+
+.Lovely-Wallet .Wallet-svg-div p{
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: clamp(1rem, 4vw, 4.43rem);
+}
+.Lovely-Wallet .Wallet-svg-div p span {
+  color: #ED628B;
+  font-size: clamp(1rem, 4vw, 4.43rem);
+  letter-spacing: 6.314px;
+}
+
+.SocialMedia {
+  margin: 43px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.SocialMedia button{
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.SocialMedia button img{
+  width: 25px;
+  aspect-ratio: 1/1;
+}
+
+.Footer-text {
+  margin: 55px auto;
+  color: #A8AAC1;
+  text-align: center;
+  font-family: Livvic;
+  font-size: 15.397px;
+  font-weight: 600;
+  letter-spacing: 1.232px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1400px){
+  .Lovely-Wallet .Wallet-inner,
+  .Wallet-inner{
+    width: 1180px;
+  }
+  .Lovely-Wallet .Wallet-svg-div,
+  .Wallet-svg-div,
+  .Footer .footer-inner{
+    width: 1180px;
+    height: 375px;
+  }
+  .Lovely-Wallet .Wallet-btn,
+  .Wallet-container .Wallet-btn{
+    left: 225px;
+  }
+  .About-inner > div{
+    height: 24.5vw;
+  }
+}
+@media screen and (max-width: 1200px){
+  .Lovely-Wallet .Wallet-inner,
+  .Wallet-inner{
+    width: 1004px;
+  }
+  .Lovely-Wallet .Wallet-svg-div,
+  .Wallet-svg-div,
+  .Footer .footer-inner{
+    width: 1004px;
+    height: 315px;
+  }
+  .Lovely-Wallet .Wallet-btn,
+  .Wallet-container .Wallet-btn{
+    left: 190px;
+    top: -130px;
+  }
+  .Lovely-Wallet .Wallet-btn img,
+  .Wallet-container .Wallet-btn img{
+    width: 230px;
+  }
+  .Crypto-Content{
+    gap: 30px;
+  }
+  .Crypto-Mockup{
+    width: 670px;
+  }
+  .Crypto-Mockup img{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px){
+  .Lovely-Wallet .Wallet-inner,
+  .Wallet-inner{
+    width: 750px;
+  }
+  .Lovely-Wallet .Wallet-svg-div,
+  .Wallet-svg-div,
+  .Footer .footer-inner{
+    width: 750px;
+    height: 265px;
+    padding: 0;
+  }
+  .Lovely-Wallet .Wallet-btn,
+  .Wallet-container .Wallet-btn{
+    left: 130px;
+    top: -120px;
+  }
+  .Lovely-Wallet .Wallet-btn img,
+  .Wallet-container .Wallet-btn img{
+    width: 200px;
+  }
+  .Lovely-Wallet .Wallet-svg-div > div:first-child,
+  .Wallet-svg-div > div:first-child{
+    margin-top: 40px;
+  }
+  .Exchange-container{
+    padding: 0;
+  }
+  .SocialMedia{
+    margin: 23px 0;
+  }
+}
+@media screen and (max-width: 768px){
+  .Lovely-Wallet .Wallet-inner,
+  .Wallet-inner{
+    width: 565px;
+  }
+  .Lovely-Wallet .Wallet-svg-div,
+  .Wallet-svg-div,
+  .Footer .footer-inner{
+    width: 565px;
+    height: 200px;
+    padding: 0;
+  }
+  .Lovely-Wallet .Wallet-btn,
+  .Wallet-container .Wallet-btn{
+    left: 100px;
+    top: -85px;
+  }
+  .Lovely-Wallet .Wallet-btn img,
+  .Wallet-container .Wallet-btn img{
+    width: 140px;
+  }
+  .Lovely-Wallet .Wallet-svg-div p{
+    margin-top: 30px;
+  }
+  .SocialMedia{
+    gap: 25px;
+    margin: 15px 0;
+  }
+  .SocialMedia button img{
+    width: 18px;
+  }
+  .Features{
+    justify-content: center;
+    column-gap: 30px;
+  }
+  .Crypto-Info{
+    gap: 35px;
+  }
+  .Crypto-Info div{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .Lovely-Wallet .Wallet-btn,
+  .Wallet-container .Wallet-btn{
+    left: 85px;
+    width: 116.44px;
+    height: 116.44px;
+    top: -60px;
+    filter: drop-shadow(0px 19px 25px #ed628b);
+  }
+  .Lovely-Wallet .Wallet-btn img,
+  .Wallet-container .Wallet-btn img {
+    width: 100%;
+  }
+  .stroke-text {
+    white-space: nowrap;
+    font-size: 18vw;
+  }
+  .Wallet-container {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 0%;
+  }
+
+  .Lovely-Wallet .Wallet-svg-div,
+  .Wallet-svg-div,
+  .Footer .footer-inner {
+    background: url("../images/Subtract-mobile.svg") no-repeat;
+    width: 230.83px;
+    height: 361.06px;
+    padding: 20px 40px;
+    margin: auto;
+  }
+
+  .Lovely-Wallet .Wallet-inner,
+  .Wallet-inner {
+    width: 335px;
+    margin: auto;
+  }
+
+  .Wallet-inner span {
+    font-size: 19px;
+  }
+
+  .Wallet-inner p {
+    width: 100%;
+    white-space: normal;
+    font-size: 48px;
+  }
+  .Wallet-inner .SocialMedia{
+    flex-wrap: wrap;
+  }
+  .SocialMedia button img{
+    height: 25px;
+    width: 25px;
+  }
+  .Lovely-Wallet .Wallet-svg-div p{
+    font-size: 32.52px;
+  }
+  .Lovely-Wallet .Wallet-svg-div p span{
+    font-size: 19px;
+    letter-spacing: 1px;
+  }
+  .Wallet-svg-div> div{
+    margin-top: 60px;
+  }
+  .Wallet-svg-div img {
+    bottom: 0;
+    top: auto;
+    right: 35px;
+    width: 267px;
+    height: 202px;
+  }
+  .bottom-buttons {
+    gap: 8px;
+    scale: 0.9;
+  }
+  .About-inner{
+    gap: 42px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .About-inner .About-first,
+  .About-inner .About-second,
+  .About-inner .About-third,
+  .About-inner .About-last
+  {
+    width: 270px;
+    height: 102.81px;
+    background: none;
+    background-color: #F2F5FF;
+    border-radius: 25.88px;
+  }
+  .About-inner p{
+    font-size:  23.29px;
+  }
+  .Features-outer{
+    display: none;
+  }
+  .Features-Container{
+    background: none;
+  }
+  .Features-title{
+    font-size: 27.6px;
+    padding: 0 30px;
+  }
+  .Features-title p{
+    font-size: 22.43px;
+  }
+  .Features{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .FeatureContent{
+    background: url('../images/FeaturesCards-mobile.svg') no-repeat;
+    background-size: contain;
+    width: 275.62px;
+    height: 183.75px;
+  }
+  .FeatureIcon{
+    filter: drop-shadow(0px 25px 40px #181b2e9c);
+    top: -50px;
+    width: 75px;
+    height: 75px;
+  }
+  .FeatureIcon img{
+    height: 45px;
+  }
+  .BuySell-crypto-container{
+    background-color: #F5F7FF;
+    padding: 50px 0;
+  }
+  .BuySell-outer{
+    display: none;
+  }
+  .Crypto-Content{
+    gap: 40px;
+    padding: 0;
+    flex-direction: column;
+  }
+  .Crypto-Mockup {
+    width: 100%;
+  }
+  .Crypto-Mockup img{
+    width: 100%;
+  }
+  .Crypto-Info div{
+    font-size: 27.6px;
+  }
+  .Exchange-container{
+    padding: 80px 30px;
+  }
+  .Exchange-container h1{
+    font-size: 44.85px;
+  }
+    .Exchange-container p {
+      margin-top: 48px;
+      width: 201.82px;
+      font-size: 21px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .Exchange{
+      margin: 0;
+    }
+    .ExchangeTop{
+      background-size: contain;
+      width: 265.33px;
+      height: 105.17px;
+    }
+    .ExchangeTop, .ExchangeBottom{
+      padding: 0 20px;
+      justify-content: space-between;
+    }
+    .Exchange-inner-left h4{
+      font-size: 14.21px;
+    }
+    .bnb-lovely{
+      width: 191.52px;
+    }
+    .Exchange-inner-left{
+      font-size: 10.88px;
+    }
+    .Exchange-inner-right{
+      font-size: 12.77px;
+    }
+    .Exchange-inner-logo{
+      width: 38.78px;
+      font-size: 12.77px;
+    }
+    .Exchange-container .Refresh{
+      width: 23.75px;
+      height: 23.75px;
+      margin: 0;
+    }
+    .ExchangeBottom{
+      width: 265.33px;
+      height: 71.24px;
+      background-size: contain;
+    }
+}
+

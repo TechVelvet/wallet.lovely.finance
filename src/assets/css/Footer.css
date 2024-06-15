@@ -1,0 +1,130 @@
+.Footer {
+    margin-top: 40px;
+}
+
+.Footer .footer-inner {
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 40px;
+    margin: auto;
+    background-color: #F5F7FF;
+    max-width: 1320px;
+    height: fit-content;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-left {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-left .bottom-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    margin: 0;
+}
+
+.footer-left .bottom-buttons button {
+    border: 1.5px solid #5f85f5;
+    background-size: cover;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.menu-list {
+    display: flex;
+    gap: 1.75rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-list ul {
+    max-width: 165px;
+    text-transform: capitalize;
+    letter-spacing: .7px;
+    list-style: none;
+    font-family: Manrope;
+}
+
+.menu-list ul li {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menu-list ul li:first-child {
+    margin-bottom: 20px;
+}
+
+.menu-list ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #181b2e;
+    transition: .3s ease;
+}
+
+.menu-list ul li a:hover {
+    color: #ed628b;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .footer-inner {
+        flex-direction: column;
+    }
+
+    .footer-left {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .Footer .footer-inner {
+        width: calc(100% - 50px);
+        border-radius: 30px;
+    }
+
+    .footer-left .bottom-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-left .bottom-buttons button {
+        border-radius: 10px;
+        width: 122px;
+        height: 50px;
+    }
+
+    .menu-list ul li:first-child {
+        margin-bottom: 5px;
+    }
+
+    .menu-list {
+        justify-content: start;
+        gap: 1.5rem;
+    }
+
+    .menu-list ul li a:hover {
+        font-weight: 400;
+    }
+
+    .SocialMedia {
+        margin-bottom: 0;
+    }
+    .Footer-text{
+        margin: 20px;
+    }
+}
